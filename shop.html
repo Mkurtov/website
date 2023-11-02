@@ -1,0 +1,128 @@
+<html>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <Head>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  </Head>
+ 
+
+
+  
+  
+
+
+
+
+  
+  
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #489FB5;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover  { 
+        background-color: #1D4049;
+        border: none;
+     color: white;
+     text-align: center;
+     opacity: 0.6;
+     transition: 0.8s;
+     
+      }
+      
+      </style>
+      </head>
+      <body>
+
+        <script>
+          function FadeInSection(props) {
+  const [isVisible, setVisible] = React.useState(true);
+  const domRef = React.useRef();
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+    return () => observer.unobserve(domRef.current);
+  }, []);
+  return (
+    <div
+      className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
+      ref={domRef}
+    >
+      {props.children}
+    </div>
+  );
+}
+        </script>
+        
+      
+      <ul>
+        <li class="pfp"><a href="#pfp"> <img src="pfp.jpg" alt="pfp" width="50" 
+          height="50"></a></li>
+          <li class="cart"><a href="#cart"> <img src="cart.png" alt="cart" width="50" 
+            height="50"></a></li>
+          
+        <li class="Home"><a class="active" href="home.html">CLEAR SHOP</a></li>
+        <li class="shop"><a href="shop.html">Shop</a></li>
+      
+        <li class="cont"><a href="contact.html">Contact</a></li>
+        <li class="about"><a href="about.html">About</a></li>
+        
+      </ul>
+
+      <div>
+
+        
+        <p class="shopbox" id="rcorners2">  Item!<br>  <p2 style="font-size: 15;"> $100</p2>  <a href="item.html"> <img  class="shopimg"  src="unused.webp" alt="unused" width="400" ></p> </a>
+
+        
+        
+        
+        
+        
+        
+       
+
+
+
+      </div>
+
+
+      
+      
+      
+
+
+
+      
+  
+
+  
+</h1>
+
+ 
+
+</html>
+
+
