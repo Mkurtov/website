@@ -56,11 +56,22 @@
       </style>
       </head>
       <body>
+        <script>
+          var Carted;
+          
+
+          function Addtocart() {
+            console.log("added");
+            Carted = 1;
+            localStorage.setItem('Carted',Carted);
+            
+          }
+          </script>
       
       <ul>
         <li class="pfp"><a href="#pfp"> <img src="pfp.jpg" alt="pfp" width="50" 
           height="50"></a></li>
-          <li class="cart"><a href="#cart"> <img src="cart.png" alt="cart" width="50" 
+          <li class="cart"><a href="cart.html"> <img src="cart.png" alt="cart" width="50" 
             height="50"></a></li>
           
         <li class="Home"><a class="active" href="index.html">CLEAR SHOP</a></li>
@@ -74,7 +85,7 @@
 
 
       <img class="Itemimg" src="unused.webp" alt="Itemimg" width="600" >
-      <p class="itemview" id="itemview">  Item<p2 class="moneynumber" > $100</p2><p3 class="Itemdiscription">This is a long item discription that shows a bunch of discriptive stuff that explains the item this could be a cool item it sells for money on the clear web shop</p3> <button class="Cart2"> Add to cart!</button>  </p> 
+      <p class="itemview" id="itemview">  Item<p2 id="moneynumber"class="moneynumber" > $100</p2><p3 class="Itemdiscription">This is a long item discription that shows a bunch of discriptive stuff that explains the item this could be a cool item it sells for money on the clear web shop</p3> <button onclick="Addtocart()" class="Cart2"> Add to cart!</button>  </p> 
 
 
       
@@ -87,7 +98,7 @@
 
   
 </h1>
-
+</body>
  
 
 </html>
