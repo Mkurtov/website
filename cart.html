@@ -53,39 +53,9 @@
       }
       
       </style>
-      </head>
+      
       <body>
-        <script>
-          
-          var Carted;
-
-           Carted = localStorage.getItem('Carted')
-
-         
-
-          function Addtocart() {
-            
-            console.log("Unadded");
-            Carted = 2;
-            localStorage.setItem('Carted',Carted);
-            if (Carted == 2) {
-            console.log("hidden");
-            
-             document.getElementById('Itemincart').style.visibility = 'hidden';
-             }
-            
-           
-            
-            
-          }
-          
-             
-          
-
-        
-
-          
-          </script>
+       
           
       
       <ul>
@@ -102,11 +72,70 @@
         
       </ul>
 
+      
+      
+
       <div id="Itemincart">
-        <p class="boxtext"id="rcorners1">Item<br><p2 style="font-size: 15;">$100</p2> <button onclick="Addtocart()">X </button></p>
-
-
+        <p class="boxtext"id="rcorners1">Item<br><p2 style="font-size: 15;"> <img class="imgboxca" src="unused.webp" width="135">$100</p2> <button class="Xbutt" onclick="Addtocart()">X </button> </p>
       </div>
+
+
+
+      <script>
+          
+        var Carted;
+        
+        var mycart = document.getElementById('Itemincart');
+        
+        Carted = localStorage.getItem('Carted')
+        
+        
+
+        function Addtocart() {
+          Carted = 2;
+
+        
+          
+        if (Carted == 2) {
+          
+          
+        
+          console.log("Unadded");
+         mycart.style.display = 'none';
+        
+        
+
+        if (Carted == 2) {
+          mycart.style.display = 'none';
+          console.log("hidden"); }
+}
+
+        
+
+          
+          
+          Carted = 2;
+          
+          localStorage.setItem('Carted',Carted);
+          }
+          if (Carted == 2) {
+          
+          
+        
+          console.log("Unadded");
+         mycart.style.display = 'none';
+        
+        
+
+        if (Carted == 2) {
+          mycart.style.display = 'none';
+          console.log("hidden"); }
+}
+        
+        
+          </script>
+
+          
 
 
        
