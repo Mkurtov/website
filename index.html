@@ -1,104 +1,68 @@
 <html>
+    <link rel="stylesheet" href="style.css">
+  
+    <Head>
+      <link rel="icon" type="image/x-icon" href="fav.png">
+      <title> Clear Shop | Item
+      </title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 
+  <body>
+    <form class="move" id="form">
+        <div >
+            <label class="pandu" for="username">USERNAME</label><br>
+            <input class="pandu2" id="username" type="text">
+        </div>
 
-  
-  <link rel="stylesheet" href="style.css">
-  
-  <Head>
-    <link rel="icon" type="image/x-icon" href="fav.png">
-    <title> Clear Shop | Home
-    </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-  </Head> 
-  
- 
-  
+        <div>
+            <label class="pandu" for="password">PASSWORD</label><br>
+            <input class="pandu2"id="password"  type="password">
 
+        </div >
+        <form action="?" method="POST">
+          <div  class="g-recaptcha" data-sitekey="6Lc-cAspAAAAACYpOZCJgmFj7eTdk9P-pqeGCxBZ"></div>
+          <br/>
+       <head>
   
-  
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+        <div >
+            <button class="pandubut"  type="submit">Next page</button>
+          </div>
 
+          <script>
+            const form = document.getElementById('form')
+            const username = document.getElementById('username')
+            const password = document.getElementById('password')
 
+            form.addEventListener('submit', function(e) {
+              e.preventDefault();
 
+              const usernameValue = username.value;
+              const passwordValue = password.value;
 
-  
-  
-    <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #489FB5;
-      }
-      
-      li {
-        float: left;
-      }
-      
-      li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      
-      li a:hover  { 
-        background-color: #1D4049;
-        border: none;
-     color: white;
-     text-align: center;
-     opacity: 0.6;
-     transition: 0.8s;
-     
-      }
-      
-      </style>
-      </head>
-      <body>
-      
-      <ul>
-        <li class="pfp"><a href="login.html"> <img src="pfp.jpg" alt="pfp" width="50" 
-          height="50"></a></li>
-          <li class="cart"><a href="cart.html"> <img src="cart.png" alt="cart" width="50"
-          height="50"></a></li>
+              localStorage.setItem('username',usernameValue);
+              localStorage.setItem('password',passwordValue);
+            })
+            </script>
+
           
-        <li class="Home"><a class="active" href="index.html">CLEAR SHOP</a></li>
-        <li class="shop"><a href="shop.html">Shop</a></li>
-      
-        <li class="cont"><a href="contact.html">Contact</a></li>
-        <li class="about"><a href="about.html">About</a></li>
+
+
         
-      </ul>
-
-
-      <p class="boxtext"id="rcorners1">Title!<br><p2 style="font-size: 15;">Some News here about something</p2></p>
-      <p class="boxtext"id="rcorners1">Title!<br><p2 style="font-size: 15;">Some News here about something</p2></p>
-      <p class="boxtext"id="rcorners1">Title!<br><p2 style="font-size: 15;">Some News here about something</p2></p>
-      <p class="boxtext"id="rcorners1">Title!<br><p2 style="font-size: 15;">Some News here about something</p2></p>
-      
-      
-      
-
-
-
-      
+   
   
-
-  
-</h1>
-<FadeInSection>
-  <footer>
-  
-    CLEAR SHOP 2023
+      <body>
+       
+        
+      </body>
     
-    <p style="font-size: 9;">Clear Shop best clear web market place, clean elegant design</p>
-    
-  </footer> 
-</FadeInSection>
 
+
+ </body>
+
+
+ 
 </html>
-
-

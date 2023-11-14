@@ -319,6 +319,7 @@ display: inline-block;
 
   }
   .pandu2{
+   
     
    
     
@@ -327,13 +328,18 @@ display: inline-block;
     color: #252525;
     width: 500;
     height: 50;
+    font-size: 30;
     size: 20;
 
 
 
   }
   .pandubut{
-    margin-top: 10;
+    display: inline-block;
+    
+    margin-top: 50;
+    margin-right: 20;
+    
     
    
     
@@ -356,6 +362,19 @@ display: inline-block;
       text-align: center;
     
   }
+
+  .g-recaptcha{ 
+    display: inline-block;
+    margin-top: 20;
+    margin-right: 40 ;
+    
+    
+   
+    
+    
+  }
+    
+  
 
 
 
